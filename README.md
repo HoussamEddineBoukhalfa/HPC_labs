@@ -1,3 +1,4 @@
+
 # ⚙️ High Performance Computing Labs
 
 This repository contains all completed practical labs for the **High Performance Computing (HPC)** module at ENSIA (2025). Each lab explores a key paradigm in parallel and distributed programming using real-world tools such as MPI, OpenMP, CUDA, and Ray.
@@ -47,14 +48,16 @@ This repository contains all completed practical labs for the **High Performance
 
 ## 📂 Repository Structure
 
+```
 HPC_labs/
-├── Lab1/ # MPI basics (C & Python)
-├── Lab2/ # MPI for ML (Python)
-├── Lab3/ # OpenMP in C
-├── Lab4/ # Intro to CUDA C/C++
-├── Lab5/ # Parallel Scan with CUDA
-├── Lab6/ # Distributed Ray with Python
+├── Lab1/              # MPI basics (C & Python)
+├── Lab2/              # MPI for ML (Python)
+├── Lab3/              # OpenMP in C
+├── Lab4/              # Intro to CUDA C/C++
+├── Lab5/              # Parallel Scan with CUDA
+├── Lab6/              # Distributed Ray with Python
 └── README.md
+```
 
 ---
 
@@ -64,30 +67,43 @@ HPC_labs/
 ```bash
 mpicc file.c -o file
 mpiexec -n 4 ./file
+```
 
-MPI (Python)
-
+### MPI (Python)
+```bash
 mpiexec -n 4 python file.py
+```
 
-OpenMP
-
+### OpenMP
+```bash
 gcc -fopenmp file.c -o file
 export OMP_NUM_THREADS=4
 ./file
+```
 
-CUDA
-
+### CUDA
+```bash
 nvcc file.cu -o file -lm
 ./file
+```
 
-Ray
-
+### Ray
+```bash
 # Setup virtual environment and install Ray
 pip install "ray[default]"
 python script.py
+```
 
-👨‍🎓 Author
+---
 
-Houssam Eddine Boukhalfa
-Fourth-Year AI Engineering Student
+## 👨‍🎓 Author
+
+**Houssam Eddine Boukhalfa**  
+Fourth-Year AI Engineering Student  
 National School of Artificial Intelligence – ENSIA
+
+---
+
+## 📜 License
+
+This content is intended for educational use only. Attribution is appreciated.
