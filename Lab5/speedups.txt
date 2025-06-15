@@ -1,0 +1,32 @@
+1. input size: 512
+Execution times:
+Sequential: 0.005 ms
+Naive parallel: 0.215 ms
+Optimized parallel: 0.018 ms
+
+Speedups:
+Naive vs Sequential: 0.02x
+Optimized vs Sequential: 0.28x
+Optimized vs Naive: 11.94x
+
+2. input size: 4096
+Execution times:
+Sequential: 0.038 ms
+Naive parallel: 0.198 ms
+Optimized parallel: 0.042 ms
+
+Speedups:
+Naive vs Sequential: 0.19x
+Optimized vs Sequential: 0.92x
+Optimized vs Naive: 4.71x
+
+3. input size: 100000
+Execution times:
+Sequential: 0.460 ms
+Naive parallel: 0.230 ms
+Optimized parallel: 0.050 ms
+
+Speedups:
+Naive vs Sequential: 2.00x
+Optimized vs Sequential: 9.20x
+Optimized vs Naive: 4.60x

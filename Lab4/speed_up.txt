@@ -1,0 +1,66 @@
+Test Name,CPU Time (ms),GPU Time (ms),Speedup
+Vector Addition (N=10000000)
+CPU execution time: 41.067 ms
+GPU execution time: 0.362 ms
+Speedup: 113.37x
+Verification: PASSED
+ex1_vector_add,41.067,0.362,113.37
+
+
+ReLU Activation (N=10000000)
+CPU execution time: 35.325 ms
+GPU execution time: 0.267 ms
+Speedup: 132.30x
+Verification: PASSED
+ex2_relu,35.325,0.267,132.30
+
+
+Matrix-Vector Multiplication (4000x4000)
+CPU execution time: 20.934 ms
+GPU execution time: 0.583 ms
+Speedup: 35.93x
+ex3_mat_vec_mul,20.934,0.583,35.93
+
+
+Vector Dot Product (N=8000000)
+CPU result: 1987358.125000
+GPU result: 2000258.750000
+CPU execution time: 10.920 ms
+GPU execution time: 0.312 ms
+Speedup: 34.96x
+ex4_dot_product,10.920,0.312,34.96
+
+
+1D Stencil Computation (N=10000000, Radius=3)
+CPU execution time: 35.365 ms
+GPU execution time: 0.288 ms
+Speedup: 122.78x
+ex5_stencil,35.365,0.288,122.781
+
+
+Batched Euclidean Distance (Vectors=1000000, Dim=128)
+Sample results (first 3 vectors):
+Vector 0: CPU=48.314232, GPU=48.314232
+Vector 1: CPU=45.410709, GPU=45.410709
+Vector 2: CPU=48.865570, GPU=48.865574
+CPU execution time: 127.028 ms
+GPU execution time: 3.871 ms
+Speedup: 32.82x
+ex6_euclidean_dist,127.028,3.871,32.82
+
+
+Parallel Partial Argmax (N=10000000)
+CPU result: max value 1000.000000 at index 4428815
+GPU result: max value 1000.000000 at index 4428815
+CPU execution time: 13.427 ms
+GPU execution time: 0.316 ms
+Speedup: 42.46x
+ex7_argmax,13.427,0.316,42.460
+
+
+Matrix Addition (Width=4096, Height=4096)
+Sample results (first element): A[0]=0.334699 + B[0]=3.299642 = C[0]=3.634341
+CPU execution time: 28.789 ms
+GPU execution time: 0.592 ms
+Speedup: 48.62x
+ex8_matrix_add,28.789,0.592,48.622
